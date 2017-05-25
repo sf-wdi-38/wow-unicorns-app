@@ -14,16 +14,24 @@ var app = express();
 // app.use(express.static("public"));
 
 app.get("/api/unicorns", function index(req, res){
-  res.send([]);
+  res.send([]); // all the unicorns
 })
 
 app.get("/api/unicorns/:id", function show(req, res){
   //var id = req.params.id;
-  res.send({});
+  res.send({}); // one unicorn
 })
 
 app.post("/api/unicorns", function create(req, res){
-  res.send({endpoint: "silly POST /api/unicorns"});
+  res.send({});  // one newly created unicorn
+})
+
+app.delete("/api/unicorns/:id", function destroy(req, res){
+  res.sendStatus(204); // just saying we did it
+})
+
+app.put("/api/unicorns/:id", function update(req, res){
+  res.send({}) // one updated unicorn
 })
 
 app.listen(3000, function(){
