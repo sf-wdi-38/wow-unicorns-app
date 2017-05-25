@@ -13,5 +13,8 @@
     "sparkles"
   ],
   "author": "nathanallen",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
