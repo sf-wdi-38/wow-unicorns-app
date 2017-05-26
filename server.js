@@ -28,6 +28,10 @@ app.get("/api/unicorns/:id", function show(req, res){
 })
 
 app.post("/api/unicorns", function create(req, res){
+  console.log("Hit POST /api/unicorns, with the following:")
+  console.log("params:", req.params)
+  console.log("query:", req.query)
+  console.log("body:", req.body)
   res.send({});  // one newly created unicorn
 })
 
