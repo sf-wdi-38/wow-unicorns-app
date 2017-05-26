@@ -2,7 +2,7 @@
 A demo app built to review concept in Mongo, Express, Node, jQuery/ajax and HTML forms.
 
 ## HTML API Endpoints
-*TODO: pending*
+Visit 'http://localhost:3000/' to see the homepage.
 
 ## JSON API Endpoints
 - Architectural Style: `REST`
