@@ -9,13 +9,7 @@
     <h1>Welcome</h1>
 
     <h4>Here are unicorns:</h4>
-    <div class="unicorn-list">
-      <div class="unicorn" id="unicorn-18148q9837234">
-        name: rufus
-        sparkles: true
-        number of horns: 1
-      </div>
-    </div>
+    <div class="unicorn-list"></div>
   </div>
 
   <script src="/scripts/app.js"></script>
@@ -26,7 +20,14 @@
       url: "/api/unicorns/592863b1b55e6e0cac0e7a2a",
       success: function(data){
         console.log("success")
-        console.log(data)
+        console.log(data.name, data.sparkles, data.number_of_horns)
+
+        $(".unicorn-list").append(`
+          <div class="unicorn" id="unicorn-${data._id}">
+            <li>${data.name} has ${data.number_of_horns} horns</li>
+          </div>
+        `);
+
       },
       error: function(){
         alert("Wow. Bad thing.")
