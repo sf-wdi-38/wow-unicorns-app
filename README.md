@@ -1,4 +1,4 @@
-# Live Code - Wow Unicorns App
+# <img src="https://media4.giphy.com/media/26AHG5KGFxSkUWw1i/giphy.gif" width=40> So Wow Unicorns App <img src="https://media4.giphy.com/media/26AHG5KGFxSkUWw1i/giphy.gif" width=40>
 A demo app built to review concept in Mongo, Express, Node, jQuery/ajax and HTML forms.
 
 ## HTML API Endpoints
