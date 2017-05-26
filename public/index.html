@@ -17,16 +17,17 @@
     // app.js
     $.ajax({
       method: "GET",
-      url: "/api/unicorns/592863b1b55e6e0cac0e7a2a",
-      success: function(data){
+      url: "/api/unicorns",
+      success: function(unicorns){
         console.log("success")
-        console.log(data.name, data.sparkles, data.number_of_horns)
 
-        $(".unicorn-list").append(`
-          <div class="unicorn" id="unicorn-${data._id}">
-            <li>${data.name} has ${data.number_of_horns} horns</li>
-          </div>
-        `);
+        unicorns.forEach(function(unicorn){
+          $(".unicorn-list").append(`
+            <div class="unicorn" id="unicorn-${unicorn._id}">
+              <li>${unicorn.name} has ${unicorn.number_of_horns} horns</li>
+            </div>
+          `);
+        })
 
       },
       error: function(){
