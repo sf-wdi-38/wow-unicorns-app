@@ -1,6 +1,4 @@
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/wow-unicorns-app");
-
 var Schema = mongoose.Schema;
 
 var unicornSchema = new Schema({
@@ -13,4 +11,5 @@ var unicornSchema = new Schema({
 });
 
 var Unicorn = mongoose.model("Unicorn", unicornSchema);
+
 module.exports = Unicorn;
