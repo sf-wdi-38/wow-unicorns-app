@@ -16,7 +16,7 @@ A demo app built to review concept in Mongo, Express, Node, jQuery/ajax and HTML
 | :------------------------ | :---------------------------------- | :--------- |
 | `GET`    `/unicorns` ✓        | Fetch a list of unicorns     | index |
 | `GET`    `/unicorns/:id` ✓     | Fetch one specific unicorn      | show |
-| `POST`   `/unicorns`         | Create a new unicorn record | create |
+| `POST`   `/unicorns` ✓        | Create a new unicorn record | create |
 | `DELETE` `/unicorns/:id`      | Remove one specific unicorn  | destroy |
 | `PUT`    `/unicorns/:id`      | Change one specific unicorn   | update |
 
