@@ -40,6 +40,9 @@ npm install
 # open a new tab and run the mongodb server
 mongod
 
+# Run the seed task
+node seed.js
+
 # open a new tab and run the express server
 node server.js     # this works fine
 nodemon server.js  # but this is preferred
