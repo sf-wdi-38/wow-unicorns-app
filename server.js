@@ -36,7 +36,13 @@ app.post("/api/unicorns", function create(req, res){
   console.log("params:", req.params)
   console.log("query:", req.query)
   console.log("body:", req.body)
-  res.send({});  // one newly created unicorn
+
+  var newUnicorn = new Unicorn(req.body);
+  newUnicorn.save(function(err, unicorn){
+    if(err) { res.sendStatus(404); }
+    res.send(unicorn);  // one newly created unicorn
+  });
+
 })
 
 app.delete("/api/unicorns/:id", function destroy(req, res){
