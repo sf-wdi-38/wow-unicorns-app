@@ -5,10 +5,10 @@ A demo app built to review concept in Mongo, Express, Node, jQuery/ajax and HTML
 *TODO: pending*
 
 ## JSON API Endpoints
-Architectural Style: `REST`
-Supported Request Formats: `URI Query String/CRUD`
-Supported Response Formats: `JSON`
-Host: `http://localhost:3000`
+- Architectural Style: `REST`
+- Supported Request Formats: `URI Query String/CRUD`
+- Supported Response Formats: `JSON`
+- Host: `http://localhost:3000`
 
 **Unicorn Endpoint**: `http://localhost:3000/api/unicorns`
 
