@@ -26,7 +26,8 @@ Host: `http://localhost:3000`
     _id: "5927148048755023209525d8",
     name: "ralph",
     sparkles: false,
-    number_of_horns: 1
+    number_of_horns: 1,
+    created_at: "2017-05-25T17:19:45.566Z"
 }
 
 ```
