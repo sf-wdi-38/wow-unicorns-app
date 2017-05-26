@@ -3,7 +3,6 @@
 <head>
   <title>Unicorns</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="/scripts/app.js"></script>
 </head>
 <body>
   <div class="container">
@@ -11,8 +10,67 @@
 
     <h4>Here are unicorns:</h4>
     <div class="unicorn-list">
-      <!-- <div class="unicorn"></div> -->
+      <div class="unicorn" id="unicorn-18148q9837234">
+        name: rufus
+        sparkles: true
+        number of horns: 1
+      </div>
     </div>
   </div>
+
+  <script src="/scripts/app.js"></script>
+  <script type="text/javascript">
+    // app.js
+    $.ajax({
+      method: "GET",
+      endpoint: "/api/unicorns/592863b1b55e6e0cac0e7a2a",
+      success: function(data){
+        console.log("success")
+        console.log(data)
+      },
+      error: function(){
+        alert("Wow. Bad thing.")
+      }
+    })
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unicorns</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome</h1>
+
+    <h4>Here are unicorns:</h4>
+    <div class="unicorn-list">
+      <div class="unicorn" id="unicorn-18148q9837234">
+        name: rufus
+        sparkles: true
+        number of horns: 1
+      </div>
+    </div>
+  </div>
+
+  <script src="/scripts/app.js"></script>
+  <script type="text/javascript">
+    // app.js
+    $.ajax({
+      method: "GET",
+      endpoint: "/api/unicorns/YOUR-UNICORN-ID",
+      success: function(data){
+        console.log("success")
+        console.log(data)
+      },
+      error: function(){
+        alert("Wow. Bad thing.")
+      }
+    })
+  </script>
+
 </body>
 </html>
